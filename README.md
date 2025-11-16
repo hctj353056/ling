@@ -2,7 +2,7 @@
     <img src="./images/head.jpg" alt="alt text" width="100%">
     <h1>ling即灵</h1>
 </div>
----
+
 <div align="center">
 
 [中文](./README.md) | [English](./README_en.md)
