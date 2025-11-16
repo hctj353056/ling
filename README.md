@@ -1,2 +1,2 @@
-#ling is “灵”
-#灵即“ling”
+# ling
+## ling即是灵
