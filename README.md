@@ -3,7 +3,7 @@
     <h1>ling即灵</h1>
     <h>2025.11.17</h>
 <!-- 仓库最后提交时间 -->
-![Last Commit](https://img.shields.io/github/last-commit/用户名/仓库名)
+![Last Commit](https://img.shields.io/github/last-commit/hctj353056/ling)
 
 <!-- 文件最后提交时间（需配合 API） -->
 ![File Commit](https://img.shields.io/badge/dynamic/json?url=https://api.github.com/repos/用户名/仓库名/commits?path=文件路径.md&query=$[0].commit.author.date&label=Updated)
