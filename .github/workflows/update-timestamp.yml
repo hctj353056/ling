@@ -9,21 +9,32 @@ jobs:
   update:
     runs-on: ubuntu-latest
     
-    # ============= 核心防循环配置 =============
-    if: github.actor != 'github-actions[bot]'  # 关键：忽略机器人自己的提交
+    # ============== 核心防自循环 ==============
+    # 绝对关键：当执行者是机器人自己时，跳过运行
+    if: github.actor != 'github-actions[bot]'
+    
     permissions:
-      contents: write  # 授予写权限
+      contents: write
     
     steps:
       - uses: actions/checkout@v4
       
-      - name: Update timestamp
+      - name: Update timestamp (Dual timezone)
         run: |
-          TIMESTAMP=$(date -u +"%Y-%m-%d %H:%M UTC")
+          UTC_TIME=$(date -u +"%Y-%m-%d %H:%M UTC")
+          export TZ='Asia/Shanghai'
+          BEIJING_TIME=$(date +"%Y-%m-%d %H:%M 北京时间")
+          TIMESTAMP="$UTC_TIME | $BEIJING_TIME"
+          
+          # 防循环双重保险：检查是否已是最新时间
+          if grep -q "$TIMESTAMP" README.md; then
+            echo "No changes needed, stopping to prevent loop"
+            exit 0
+          fi
+          
           sed -i "s/<!-- LAST_UPDATED -->.*<!-- \/LAST_UPDATED -->/<!-- LAST_UPDATED -->$TIMESTAMP<!-- \/LAST_UPDATED -->/g" README.md
       
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: 'chore: auto-update timestamp badge'
-          commit_author: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
+          commit_message: 'chore: auto-update timestamp badge [bot]'
