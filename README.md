@@ -2,6 +2,7 @@
     <img src="./images/图像.jpg" alt="alt text" width="100%">
     <h1>ling即灵</h1>
     <h>2025.11.17</h>
+
 <!-- 仓库最后提交时间 -->
 ![Last Commit](https://img.shields.io/github/last-commit/hctj353056/ling)
 
