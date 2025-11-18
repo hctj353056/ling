@@ -24,8 +24,8 @@ import PyPDF2
 from markitdown import MarkItDown   # 用于兜底文本提取
 
 # ---------- 配置 ----------
-INPUT_DIR   = "/storage/emulated/0/聆灵/文件库"
-OUTPUT_DIR  = "/storage/emulated/0/聆灵/mdai_out"
+INPUT_DIR   = "/文件库"
+OUTPUT_DIR  = "/mdai库"
 AUDIO_SLICE = 0.1   # 秒
 IMG_GRID    = (10, 10)
 
@@ -124,3 +124,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+
+
