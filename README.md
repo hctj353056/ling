@@ -5,8 +5,8 @@
 <!-- 仓库最后提交时间 -->
 ![Last Commit](https://img.shields.io/github/last-commit/hctj353056/ling)
 
-<!-- 文件最后提交时间（需配合 API） -->
-![File Commit](https://img.shields.io/badge/dynamic/json?url=https://api.github.com/repos/hctj353056/ling/commits?path=https://github.com/hctj353056/ling/blob/main/README.md.md&query=$[0].commit.author.date&label=Updated)
+<!-- README.md 文件最后提交时间 -->
+![File Commit](https://img.shields.io/badge/dynamic/json?url=https://api.github.com/repos/hctj353056/ling/commits?path=README.md&query=$[0].commit.author.date&label=Updated)
 
 </div><div align='center'>
 
