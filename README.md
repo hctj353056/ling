@@ -1,7 +1,7 @@
 <div align='center'>
     <img src="./images/图像.jpg" alt="alt text" width="100%">
     <h1>ling即灵</h1>
-<!-- LAST_UPDATED -->2025-11-18 13:21 UTC | 2025-11-18 21:21 北京时间<!-- /LAST_UPDATED -->
+<!-- LAST_UPDATED -->2025-11-18 13:32 UTC<!-- /LAST_UPDATED -->
 </div><div align='center'>
 
 [中文](./README.md) | [English](./README_en.md)
