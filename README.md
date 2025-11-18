@@ -3,7 +3,11 @@
     <h1>ling即灵</h1>
     <h>2025.11.17</h>
 
-</div><div align="center">
+</div>
+
+<!-- LAST_UPDATED -->2024-01-15 12:00 UTC<!-- /LAST_UPDATED -->
+
+<div align="center">
 
 <!-- 仓库最后提交时间 -->
 ![Last Commit](https://img.shields.io/github/last-commit/hctj353056/ling?style=flat-square&logo=github&color=blue)
