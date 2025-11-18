@@ -3,11 +3,13 @@
     <h1>ling即灵</h1>
     <h>2025.11.17</h>
 
+</div><div align="center">
+
 <!-- 仓库最后提交时间 -->
-![Last Commit](https://img.shields.io/github/last-commit/hctj353056/ling)
+![Last Commit](https://img.shields.io/github/last-commit/hctj353056/ling?style=flat-square&logo=github&color=blue)
 
 <!-- README.md 文件最后提交时间 -->
-![File Commit](https://img.shields.io/badge/dynamic/json?url=https://api.github.com/repos/hctj353056/ling/commits?path=README.md&query=$[0].commit.author.date&label=Updated)
+![File Commit](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Frepos%2Fhctj353056%2Fling%2Fcommits%3Fpath%3DREADME.md&query=%24%5B0%5D.commit.author.date&label=Updated&style=flat-square&logo=github&color=green)
 
 </div><div align='center'>
 
