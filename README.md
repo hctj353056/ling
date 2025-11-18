@@ -1,21 +1,11 @@
 <div align='center'>
     <img src="./images/图像.jpg" alt="alt text" width="100%">
     <h1>ling即灵</h1>
-    <h>2025.11.17</h>
-
 </div>
 
 <!-- LAST_UPDATED -->2025-11-18 13:27 UTC<!-- /LAST_UPDATED -->
 
-<div align="center">
-
-<!-- 仓库最后提交时间 -->
-![Last Commit](https://img.shields.io/github/last-commit/hctj353056/ling?style=flat-square&logo=github&color=blue)
-
-<!-- README.md 文件最后提交时间 -->
-![File Commit](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Frepos%2Fhctj353056%2Fling%2Fcommits%3Fpath%3DREADME.md&query=%24%5B0%5D.commit.author.date&label=Updated&style=flat-square&logo=github&color=green)
-
-</div><div align='center'>
+<div align='center'>
 
 [中文](./README.md) | [English](./README_en.md)
 </div><p align="center">
