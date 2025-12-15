@@ -1,6 +1,6 @@
 <div align='center'>
     <img src="./images/图像.jpg" alt="alt text" width="100%">
-    <h1>ling即灵</h1>
+    <h1>lingai</h1>
 <!-- LAST_UPDATED -->2025-12-09 23:51 UTC | 2025-12-10 07:51 北京时间<!-- /LAST_UPDATED -->
 </div><div align='center'>
 
