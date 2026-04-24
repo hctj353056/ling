@@ -1,0 +1,50 @@
+; ==========================================
+; FSG汇编器自举验证测试
+; Bootstrap Verification Test
+; ==========================================
+
+.SECTION .text
+.GLOBAL _start
+
+; ==========================================
+; 测试：编译简单程序并验证
+; ==========================================
+_start:
+    ; 测试1: 简单数值输出
+    LOADIMM R0, 0x48        ; 'H'
+    PRINT R0
+    
+    LOADIMM R0, 0x69        ; 'i'
+    PRINT R0
+    
+    LOADIMM R0, 0x0A        ; 换行
+    PRINT R0
+    
+    ; 测试2: 字符串输出
+    LOADIMM R0, msg_bootstrap
+    PRINTS msg_bootstrap
+    
+    LOADIMM R0, 0x0A
+    PRINT R0
+    
+    ; 测试3: 算术运算
+    LOADIMM R0, 10
+    LOADIMM R1, 20
+    ADD R2, R0, R1          ; R2 = 30
+    PRINT R2
+    
+    LOADIMM R0, 0x0A
+    PRINT R0
+    
+    HALT
+
+; ==========================================
+; 字符串常量
+; ==========================================
+.SECTION .rodata
+
+msg_bootstrap:
+.STR "Bootstrap test successful!"
+
+msg_version:
+.STR "FSG Assembler v1.0"

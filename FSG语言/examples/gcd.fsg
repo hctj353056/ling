@@ -1,0 +1,73 @@
+; ==========================================
+; GCD - 最大公约数 (欧几里得算法)
+; 展示函数调用和返回机制
+; ==========================================
+
+.SECTION .rodata
+a_val:  .DW 48
+b_val:  .DW 18
+result_addr: .DW 0
+result_msg: .STR "GCD = "
+newline: .STR "\n"
+
+.SECTION .text
+.GLOBAL _start
+
+_start:
+    ; 计算 GCD(48, 18)
+    LOADIMM R0, 48         ; a = 48
+    LOADIMM R1, 18         ; b = 18
+    
+    CALL gcd               ; 调用 GCD 函数
+    
+    ; 结果在 R0 中
+    PRINT R0
+    PRINTS newline
+    
+    HALT
+
+; ------------------------------------------
+; GCD 函数 - 欧几里得算法
+; 输入: R0 = a, R1 = b
+; 输出: R0 = gcd(a, b)
+; ------------------------------------------
+gcd:
+    ; 保存调用者上下文
+    PUSH R1                ; 保存 b
+    PUSH R2                ; 保存 R2
+    
+gcd_loop:
+    ; 比较 b 和 a
+    CMP R1, R0
+    JE gcd_done
+    
+    ; 如果 b > a，交换
+    JG swap
+    
+continue_gcd:
+    ; a = a % b
+    MOD R0, R0, R1
+    
+    ; 比较 b 和 0
+    CMP R1, R0
+    JE gcd_done
+    
+    ; 交换 a 和 b
+    MOV R2, R0
+    MOV R0, R1
+    MOV R1, R2
+    
+    JMP gcd_loop
+
+swap:
+    MOV R2, R0
+    MOV R0, R1
+    MOV R1, R2
+    JMP continue_gcd
+
+gcd_done:
+    ; 恢复上下文
+    POP R2
+    POP R1
+    
+    RET

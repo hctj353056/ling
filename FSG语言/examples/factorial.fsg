@@ -1,0 +1,40 @@
+; ==========================================
+; Factorial - 阶乘计算
+; 计算 n! = n * (n-1) * ... * 2 * 1
+; ==========================================
+
+.SECTION .rodata
+input_prompt: .STR "Enter a number: "
+result_msg:  .STR "Factorial = "
+newline:      .STR "\n"
+
+.SECTION .text
+.GLOBAL _start
+
+_start:
+    ; R0 = n (要计算阶乘的数)
+    LOADIMM R0, 5          ; 计算 5!
+    
+    ; R1 = result = 1
+    LOADIMM R1, 1
+    
+    ; R2 = i = n
+    MOV R2, R0
+    
+loop:
+    ; result *= i
+    MUL R1, R1, R2
+    
+    ; i--
+    SUB R2, R2, 1
+    
+    ; if i > 0, continue
+    CMP R2, R0
+    JG loop
+    
+done:
+    ; 打印结果
+    PRINT R1
+    PRINTS newline
+    
+    HALT
