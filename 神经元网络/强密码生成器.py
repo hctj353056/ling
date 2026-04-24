@@ -2,9 +2,8 @@
 # 通过模拟破解测试，逐轮淘汰弱密码，留下真正的强密码
 # 2026.4.24
 
-import random
+import secrets
 import string
-import hashlib
 
 # ========== 常见字典（模拟破解者会用到的） ==========
 常见词 = {
@@ -161,19 +160,20 @@ def 生成密码(长度=16):
     密码 = []
     
     # 保证多样性
-    密码.append(random.choice(小写))
-    密码.append(random.choice(大写))
-    密码.append(random.choice(数字))
-    密码.append(random.choice(特殊))
+    密码.append(secrets.choice(小写))
+    密码.append(secrets.choice(大写))
+    密码.append(secrets.choice(数字))
+    密码.append(secrets.choice(特殊))
     
     # 剩余位置随机填充
     所有字符 = 小写 + 大写 + 数字 + 特殊
     for _ in range(长度 - 4):
-        密码.append(random.choice(所有字符))
+        密码.append(secrets.choice(所有字符))
     
-    # 彻底打乱（多次洗牌确保随机）
-    for _ in range(3):
-        random.shuffle(密码)
+    # 彻底打乱（Fisher-Yates洗牌）
+    for i in range(len(密码) - 1, 0, -1):
+        j = secrets.randbelow(i + 1)
+        密码[i], 密码[j] = 密码[j], 密码[i]
     
     return ''.join(密码)
 
@@ -211,7 +211,7 @@ def 强密码淘汰赛(每轮数量=5, 总轮数=5, 密码长度=16):
         
         # 混合本轮所有候选，增加多样性
         for 密码, 分数, _ in 本轮候选[晋级数量:]:
-            if random.random() < 0.3:  # 30%概率保留弱候选中的变异
+            if secrets.choice([True, False, False]):  # 1/3概率保留弱候选中的变异
                 变异密码 = 密码变异(密码)
                 新分数 = 模拟破解评估(变异密码)
                 新时长 = 计算破解时长(变异密码)
@@ -254,9 +254,9 @@ def 密码变异(密码):
     特殊 = "!@#$%^&*"
     
     变异 = list(密码)
-    for _ in range(random.randint(1, 3)):
-        位置 = random.randint(0, len(密码) - 1)
-        新字符 = random.choice(小写 + 大写 + 数字 + 特殊)
+    for _ in range(secrets.randbelow(3) + 1):  # 1-3次
+        位置 = secrets.randbelow(len(密码))
+        新字符 = secrets.choice(小写 + 大写 + 数字 + 特殊)
         变异[位置] = 新字符
     
     return ''.join(变异)
