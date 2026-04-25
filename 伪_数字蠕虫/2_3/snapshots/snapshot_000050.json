@@ -1,0 +1,432 @@
+{
+  "tick": 50,
+  "food_eaten": 5,
+  "energy": 198.0,
+  "network": {
+    "node_count": 20,
+    "iteration": 51,
+    "adjacency": {
+      "0": [
+        {
+          "target": 4,
+          "weight": [
+            0.2742849757014108,
+            0.0685712439253527
+          ]
+        },
+        {
+          "target": 6,
+          "weight": [
+            0.26629148565280253,
+            -0.332864357066003
+          ]
+        },
+        {
+          "target": 8,
+          "weight": [
+            -0.11178194031834184,
+            -0.27945485079585464
+          ]
+        }
+      ],
+      "1": [
+        {
+          "target": 19,
+          "weight": [
+            -0.1500621565340524,
+            -0.18757769566756555
+          ]
+        },
+        {
+          "target": 4,
+          "weight": [
+            -0.35355339059327373,
+            0.0
+          ]
+        },
+        {
+          "target": 12,
+          "weight": [
+            0.0,
+            -0.23094010767585033
+          ]
+        }
+      ],
+      "2": [],
+      "3": [
+        {
+          "target": 10,
+          "weight": [
+            -0.050119713046965435,
+            0.20047885218786174
+          ]
+        },
+        {
+          "target": 6,
+          "weight": [
+            0.19745912361199328,
+            0.09872956180599664
+          ]
+        }
+      ],
+      "4": [
+        {
+          "target": 7,
+          "weight": [
+            0.29041799999999995,
+            0.29041799999999995
+          ]
+        }
+      ],
+      "5": [
+        {
+          "target": 0,
+          "weight": [
+            0.19895074880732813,
+            0.2652676650764378
+          ]
+        },
+        {
+          "target": 7,
+          "weight": [
+            -0.12179032323874699,
+            0.1623870976516626
+          ]
+        },
+        {
+          "target": 1,
+          "weight": [
+            -0.18735630160334918,
+            0.14988504128267932
+          ]
+        }
+      ],
+      "6": [
+        {
+          "target": 11,
+          "weight": [
+            -0.18221929935712217,
+            -0.1366644745178415
+          ]
+        },
+        {
+          "target": 1,
+          "weight": [
+            0.16767291047751273,
+            -0.22356388063668367
+          ]
+        },
+        {
+          "target": 13,
+          "weight": [
+            -0.14520899999999998,
+            0.193612
+          ]
+        }
+      ],
+      "7": [
+        {
+          "target": 0,
+          "weight": [
+            -0.13759313551142432,
+            0.20638970326713663
+          ]
+        },
+        {
+          "target": 5,
+          "weight": [
+            0.09630248524082424,
+            -0.2407562131020604
+          ]
+        }
+      ],
+      "8": [
+        {
+          "target": 1,
+          "weight": [
+            0.1,
+            0.0
+          ]
+        },
+        {
+          "target": 2,
+          "weight": [
+            -0.282842712474619,
+            -0.21213203435596423
+          ]
+        }
+      ],
+      "9": [],
+      "10": [],
+      "11": [
+        {
+          "target": 4,
+          "weight": [
+            0.20958000000000002,
+            -0.52395
+          ]
+        }
+      ],
+      "12": [],
+      "13": [],
+      "14": [],
+      "15": [],
+      "16": [],
+      "17": [],
+      "18": [],
+      "19": []
+    },
+    "nodes": [
+      {
+        "id": 0,
+        "state": [
+          0.9999062373299152,
+          0.9860713431781114
+        ],
+        "threshold": 0.5,
+        "active_history": 1
+      },
+      {
+        "id": 1,
+        "state": [
+          0.5910217284817085,
+          0.09296123990412634
+        ],
+        "threshold": 0.5,
+        "active_history": 0
+      },
+      {
+        "id": 2,
+        "state": [
+          0.0,
+          0.0
+        ],
+        "threshold": 0.5,
+        "active_history": 0
+      },
+      {
+        "id": 3,
+        "state": [
+          0.0,
+          0.0
+        ],
+        "threshold": 0.5,
+        "active_history": 0
+      },
+      {
+        "id": 4,
+        "state": [
+          0.0,
+          0.0
+        ],
+        "threshold": 0.5,
+        "active_history": 1
+      },
+      {
+        "id": 5,
+        "state": [
+          0.0,
+          0.0
+        ],
+        "threshold": 0.5,
+        "active_history": 0
+      },
+      {
+        "id": 6,
+        "state": [
+          0.6810531692320533,
+          0.05854968854884142
+        ],
+        "threshold": 0.5,
+        "active_history": 1
+      },
+      {
+        "id": 7,
+        "state": [
+          0.0,
+          0.0
+        ],
+        "threshold": 0.5,
+        "active_history": 0
+      },
+      {
+        "id": 8,
+        "state": [
+          -0.9132921117096285,
+          -0.7593348381098182
+        ],
+        "threshold": 0.5,
+        "active_history": 0
+      },
+      {
+        "id": 9,
+        "state": [
+          0.0,
+          0.0
+        ],
+        "threshold": 0.5,
+        "active_history": 0
+      },
+      {
+        "id": 10,
+        "state": [
+          0.0,
+          0.0
+        ],
+        "threshold": 0.5,
+        "active_history": 0
+      },
+      {
+        "id": 11,
+        "state": [
+          0.0,
+          0.0
+        ],
+        "threshold": 0.5,
+        "active_history": 1
+      },
+      {
+        "id": 12,
+        "state": [
+          0.0,
+          0.0
+        ],
+        "threshold": 0.5,
+        "active_history": 0
+      },
+      {
+        "id": 13,
+        "state": [
+          0.0,
+          0.0
+        ],
+        "threshold": 0.5,
+        "active_history": 0
+      },
+      {
+        "id": 14,
+        "state": [
+          0.0,
+          0.0
+        ],
+        "threshold": 0.5,
+        "active_history": 0
+      },
+      {
+        "id": 15,
+        "state": [
+          0.0,
+          0.0
+        ],
+        "threshold": 0.5,
+        "active_history": 0
+      },
+      {
+        "id": 16,
+        "state": [
+          0.0,
+          0.0
+        ],
+        "threshold": 0.5,
+        "active_history": 0
+      },
+      {
+        "id": 17,
+        "state": [
+          0.0,
+          0.0
+        ],
+        "threshold": 0.5,
+        "active_history": 0
+      },
+      {
+        "id": 18,
+        "state": [
+          0.0,
+          0.0
+        ],
+        "threshold": 0.5,
+        "active_history": 0
+      },
+      {
+        "id": 19,
+        "state": [
+          0.0,
+          0.0
+        ],
+        "threshold": 0.5,
+        "active_history": 0
+      }
+    ],
+    "output_sequence": [
+      "STAY",
+      "STAY",
+      "STAY",
+      "STAY",
+      "STAY",
+      "STAY",
+      "STAY",
+      "STAY",
+      "STAY",
+      "STAY",
+      "STAY",
+      "STAY",
+      "STAY",
+      "STAY",
+      "STAY",
+      "STAY",
+      "STAY",
+      "STAY",
+      "STAY",
+      "STAY",
+      "STAY",
+      "STAY",
+      "STAY",
+      "STAY",
+      "STAY",
+      "STAY",
+      "STAY",
+      "STAY",
+      "STAY",
+      "STAY",
+      "STAY",
+      "STAY",
+      "STAY",
+      "STAY",
+      "STAY",
+      "STAY",
+      "STAY",
+      "STAY",
+      "STAY",
+      "STAY",
+      "STAY",
+      "STAY",
+      "STAY",
+      "STAY",
+      "STAY",
+      "STAY",
+      "STAY",
+      "STAY",
+      "STAY",
+      "SOUTH",
+      "STAY"
+    ],
+    "cache_length": 4,
+    "command_set": [
+      "STAY",
+      "NORTH",
+      "SOUTH",
+      "WEST",
+      "EAST",
+      "EAT"
+    ]
+  },
+  "action_names": [
+    "STAY",
+    "NORTH",
+    "SOUTH",
+    "WEST",
+    "EAST",
+    "EAT"
+  ]
+}
