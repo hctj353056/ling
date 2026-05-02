@@ -3,6 +3,7 @@ __pycache__/
 *.pyo
 snapshots/
 logs/
+**/dna/*.json
 *.egg-info/
 dist/
 build/
