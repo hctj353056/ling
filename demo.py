@@ -7,10 +7,12 @@ ling demo - 一键运行，展示神经元网络模拟
 
 import sys
 import os
+from neuron_simulator import NeuronSimulator
+
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '神经元网络'))
 
-from neuron_simulator import NeuronSimulator
+
 
 if __name__ == "__main__":
     print("=" * 60)
